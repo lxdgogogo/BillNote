@@ -20,3 +20,4 @@ D:\Billproj\BillNote\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp
 D:\Billproj\BillNote\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\Billproj\BillNote\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 D:\Billproj\BillNote\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Main.resources
+D:\Billproj\BillNote\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UploadBill.resources

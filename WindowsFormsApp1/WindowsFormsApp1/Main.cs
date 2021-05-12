@@ -29,7 +29,8 @@ namespace WindowsFormsApp1
 
         private void 账单记录ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            UploadBill uploadBill = new UploadBill();
+            uploadBill.ShowDialog();
         }
     }
 }

@@ -52,7 +52,7 @@ namespace WindowsFormsApp1
             this.统计ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -63,27 +63,27 @@ namespace WindowsFormsApp1
             this.编辑账单ToolStripMenuItem,
             this.编辑账单ToolStripMenuItem1});
             this.新建ToolStripMenuItem.Name = "新建ToolStripMenuItem";
-            this.新建ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.新建ToolStripMenuItem.Size = new System.Drawing.Size(53, 26);
             this.新建ToolStripMenuItem.Text = "管理";
             this.新建ToolStripMenuItem.Click += new System.EventHandler(this.新建ToolStripMenuItem_Click);
             // 
             // 账单记录ToolStripMenuItem
             // 
             this.账单记录ToolStripMenuItem.Name = "账单记录ToolStripMenuItem";
-            this.账单记录ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.账单记录ToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.账单记录ToolStripMenuItem.Text = "新建一个账单记录";
             this.账单记录ToolStripMenuItem.Click += new System.EventHandler(this.账单记录ToolStripMenuItem_Click);
             // 
             // 编辑账单ToolStripMenuItem
             // 
             this.编辑账单ToolStripMenuItem.Name = "编辑账单ToolStripMenuItem";
-            this.编辑账单ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.编辑账单ToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.编辑账单ToolStripMenuItem.Text = "移除一个账单记录";
             // 
             // 编辑账单ToolStripMenuItem1
             // 
             this.编辑账单ToolStripMenuItem1.Name = "编辑账单ToolStripMenuItem1";
-            this.编辑账单ToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.编辑账单ToolStripMenuItem1.Size = new System.Drawing.Size(212, 26);
             this.编辑账单ToolStripMenuItem1.Text = "编辑账单";
             // 
             // 统计ToolStripMenuItem
@@ -92,7 +92,7 @@ namespace WindowsFormsApp1
             this.查询周期账单ToolStripMenuItem,
             this.查询目前总收支ToolStripMenuItem});
             this.统计ToolStripMenuItem.Name = "统计ToolStripMenuItem";
-            this.统计ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.统计ToolStripMenuItem.Size = new System.Drawing.Size(53, 26);
             this.统计ToolStripMenuItem.Text = "统计";
             // 
             // 查询周期账单ToolStripMenuItem
@@ -103,37 +103,37 @@ namespace WindowsFormsApp1
             this.本月账单ToolStripMenuItem,
             this.年度账单ToolStripMenuItem});
             this.查询周期账单ToolStripMenuItem.Name = "查询周期账单ToolStripMenuItem";
-            this.查询周期账单ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.查询周期账单ToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
             this.查询周期账单ToolStripMenuItem.Text = "查询周期账单";
             // 
             // 本日账单ToolStripMenuItem
             // 
             this.本日账单ToolStripMenuItem.Name = "本日账单ToolStripMenuItem";
-            this.本日账单ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.本日账单ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.本日账单ToolStripMenuItem.Text = "本日账单";
             // 
             // 本周账单ToolStripMenuItem
             // 
             this.本周账单ToolStripMenuItem.Name = "本周账单ToolStripMenuItem";
-            this.本周账单ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.本周账单ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.本周账单ToolStripMenuItem.Text = "本周账单";
             // 
             // 本月账单ToolStripMenuItem
             // 
             this.本月账单ToolStripMenuItem.Name = "本月账单ToolStripMenuItem";
-            this.本月账单ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.本月账单ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.本月账单ToolStripMenuItem.Text = "本月账单";
             // 
             // 年度账单ToolStripMenuItem
             // 
             this.年度账单ToolStripMenuItem.Name = "年度账单ToolStripMenuItem";
-            this.年度账单ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.年度账单ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.年度账单ToolStripMenuItem.Text = "年度账单";
             // 
             // 查询目前总收支ToolStripMenuItem
             // 
             this.查询目前总收支ToolStripMenuItem.Name = "查询目前总收支ToolStripMenuItem";
-            this.查询目前总收支ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.查询目前总收支ToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
             this.查询目前总收支ToolStripMenuItem.Text = "查询目前总收支";
             // 
             // Main
