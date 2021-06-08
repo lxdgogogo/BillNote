@@ -16,6 +16,10 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+        public void Refresh_bill()
+        {
+
+        }
         private void Call_calc(string type)
         {
             /*
@@ -98,6 +102,17 @@ namespace WindowsFormsApp1
         {
             dataGridView1.ReadOnly = true;
             button1.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 删除记录ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Delete delete = new Delete();
+            delete.ShowDialog();
         }
     }
 }

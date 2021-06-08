@@ -41,10 +41,13 @@ namespace WindowsFormsApp1
             this.年度账单ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查询目前总收支ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.BillCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Money = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.删除记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -66,7 +69,8 @@ namespace WindowsFormsApp1
             // 
             this.新建ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.账单记录ToolStripMenuItem,
-            this.编辑账单ToolStripMenuItem1});
+            this.编辑账单ToolStripMenuItem1,
+            this.删除记录ToolStripMenuItem});
             this.新建ToolStripMenuItem.Name = "新建ToolStripMenuItem";
             this.新建ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.新建ToolStripMenuItem.Text = "管理";
@@ -109,28 +113,28 @@ namespace WindowsFormsApp1
             // 本日账单ToolStripMenuItem
             // 
             this.本日账单ToolStripMenuItem.Name = "本日账单ToolStripMenuItem";
-            this.本日账单ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.本日账单ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.本日账单ToolStripMenuItem.Text = "本日账单";
             this.本日账单ToolStripMenuItem.Click += new System.EventHandler(this.本日账单ToolStripMenuItem_Click);
             // 
             // 本周账单ToolStripMenuItem
             // 
             this.本周账单ToolStripMenuItem.Name = "本周账单ToolStripMenuItem";
-            this.本周账单ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.本周账单ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.本周账单ToolStripMenuItem.Text = "本周账单";
             this.本周账单ToolStripMenuItem.Click += new System.EventHandler(this.本周账单ToolStripMenuItem_Click);
             // 
             // 本月账单ToolStripMenuItem
             // 
             this.本月账单ToolStripMenuItem.Name = "本月账单ToolStripMenuItem";
-            this.本月账单ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.本月账单ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.本月账单ToolStripMenuItem.Text = "本月账单";
             this.本月账单ToolStripMenuItem.Click += new System.EventHandler(this.本月账单ToolStripMenuItem_Click);
             // 
             // 年度账单ToolStripMenuItem
             // 
             this.年度账单ToolStripMenuItem.Name = "年度账单ToolStripMenuItem";
-            this.年度账单ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.年度账单ToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.年度账单ToolStripMenuItem.Text = "年度账单";
             this.年度账单ToolStripMenuItem.Click += new System.EventHandler(this.年度账单ToolStripMenuItem_Click);
             // 
@@ -146,6 +150,7 @@ namespace WindowsFormsApp1
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.BillCode,
             this.Date,
             this.Money,
             this.Type});
@@ -158,27 +163,6 @@ namespace WindowsFormsApp1
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // Date
-            // 
-            this.Date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Date.HeaderText = "日期";
-            this.Date.MinimumWidth = 6;
-            this.Date.Name = "Date";
-            // 
-            // Money
-            // 
-            this.Money.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Money.HeaderText = "收支";
-            this.Money.MinimumWidth = 6;
-            this.Money.Name = "Money";
-            // 
-            // Type
-            // 
-            this.Type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Type.HeaderText = "种类";
-            this.Type.MinimumWidth = 6;
-            this.Type.Name = "Type";
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(653, 407);
@@ -190,11 +174,61 @@ namespace WindowsFormsApp1
             this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // BillCode
+            // 
+            this.BillCode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.BillCode.HeaderText = "账单编号";
+            this.BillCode.MinimumWidth = 6;
+            this.BillCode.Name = "BillCode";
+            this.BillCode.ReadOnly = true;
+            // 
+            // Date
+            // 
+            this.Date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Date.HeaderText = "日期";
+            this.Date.MinimumWidth = 6;
+            this.Date.Name = "Date";
+            this.Date.ReadOnly = true;
+            // 
+            // Money
+            // 
+            this.Money.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Money.HeaderText = "收支";
+            this.Money.MinimumWidth = 6;
+            this.Money.Name = "Money";
+            this.Money.ReadOnly = true;
+            // 
+            // Type
+            // 
+            this.Type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Type.HeaderText = "种类";
+            this.Type.MinimumWidth = 6;
+            this.Type.Name = "Type";
+            this.Type.ReadOnly = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(339, 407);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(113, 31);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "刷新账单";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // 删除记录ToolStripMenuItem
+            // 
+            this.删除记录ToolStripMenuItem.Name = "删除记录ToolStripMenuItem";
+            this.删除记录ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.删除记录ToolStripMenuItem.Text = "删除记录";
+            this.删除记录ToolStripMenuItem.Click += new System.EventHandler(this.删除记录ToolStripMenuItem_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.menuStrip1);
@@ -225,9 +259,12 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ToolStripMenuItem 年度账单ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 查询目前总收支ToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BillCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn Date;
         private System.Windows.Forms.DataGridViewTextBoxColumn Money;
         private System.Windows.Forms.DataGridViewTextBoxColumn Type;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ToolStripMenuItem 删除记录ToolStripMenuItem;
     }
 }

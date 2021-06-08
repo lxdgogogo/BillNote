@@ -35,3 +35,4 @@ D:\Billproj\BillNote\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.Generate
 D:\Billproj\BillNote\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 D:\Billproj\BillNote\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\Billproj\BillNote\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\Billproj\BillNote\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Delete.resources
