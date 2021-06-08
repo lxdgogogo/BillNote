@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string to_delete = label1.Text;
+            string to_delete = textBox1.Text;
             bool is_valid = true;
             for(int i = 0; i < to_delete.Length; ++i)
             {
