@@ -7,15 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
         public int flag = 0;
+        private MySqlConnection conn;
 
         public Form1()
         {
+            string connectionString = "server = 121.196.102.135;port=3306;user=billnote;password=wHyaXdnjFZMkzewK;database=billnote;SslMode=None";
+            conn = new MySqlConnection(connectionString);
+            try
+            {
+                conn.Open();
+                Console.WriteLine("已经建立连接");
+            }
+
+            catch (MySqlException e)	//catch捕获异常
+            {
+                Console.WriteLine(e.Message);
+            }
             InitializeComponent();
         }
 
@@ -43,9 +57,15 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("用户名或密码不得为空","警告");
             }
-            if(username=="123" && code == "456")
+            string str = "SELECT * FROM `register` where username='" + username + "'and password='" + code + "';";
+            MySqlCommand co = new MySqlCommand(str, conn);  //查询数据库
+            co = new MySqlCommand(str, conn);
+            MySqlDataReader reader = co.ExecuteReader();
+            bool flag = reader.Read();
+            if (flag)
             {
-                flag = 1;
+                Main main = new Main();
+                main.ShowDialog();
                 this.Close();
             }
         }
