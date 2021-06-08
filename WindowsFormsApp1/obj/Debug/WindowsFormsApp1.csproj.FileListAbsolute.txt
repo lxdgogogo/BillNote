@@ -21,3 +21,17 @@ D:\Billproj\BillNote\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp
 D:\Billproj\BillNote\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 D:\Billproj\BillNote\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Main.resources
 D:\Billproj\BillNote\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UploadBill.resources
+D:\Billproj\BillNote\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Billproj\BillNote\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Billproj\BillNote\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Billproj\BillNote\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\Billproj\BillNote\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Calculate.resources
+D:\Billproj\BillNote\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\Billproj\BillNote\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Main.resources
+D:\Billproj\BillNote\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Register.resources
+D:\Billproj\BillNote\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Billproj\BillNote\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UploadBill.resources
+D:\Billproj\BillNote\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\Billproj\BillNote\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\Billproj\BillNote\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Billproj\BillNote\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
