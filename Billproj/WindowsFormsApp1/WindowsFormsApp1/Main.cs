@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace WindowsFormsApp1
 {
     public partial class Main : Form
     {
+        public MySqlConnection conn;
         public Main()
         {
             InitializeComponent();
+            
         }
 
         private void Main_Load(object sender, EventArgs e)

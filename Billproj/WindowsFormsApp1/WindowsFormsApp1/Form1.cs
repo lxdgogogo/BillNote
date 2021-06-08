@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,8 +14,21 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        private MySqlConnection conn;
         public Form1()
         {
+            string connectionString = "server = 121.196.102.135;port=3306;user=billnote;password=wHyaXdnjFZMkzewK;database=billnote;SslMode=None";
+            conn = new MySqlConnection(connectionString);
+            try
+            {
+                conn.Open();
+                Console.WriteLine("已经建立连接");
+            }
+
+            catch (MySqlException e)	//catch捕获异常
+            {
+                Console.WriteLine(e.Message);
+            }
             InitializeComponent();
         }
 
@@ -37,27 +51,30 @@ namespace WindowsFormsApp1
         {
             string username = textBox1.Text;
             string code = textBox2.Text;
-            
-            
-        }
-        public bool insertDB(String sql)
-        {
-            using (SqlCommand cmd = new SqlCommand())
+            //SELECT * FROM `t_user` where username='tw' limit 1
+            string str = "SELECT * FROM `register` where username='" + username + "'and password='" + code + "';";
+            MySqlCommand co = new MySqlCommand(str, conn);  //查询数据库
+            co = new MySqlCommand(str, conn);
+            MySqlDataReader reader = co.ExecuteReader();
+            bool flag = reader.Read();
+            if (flag)
             {
-                try
-                {
-                    cmd.CommandText = sql;//设置SQL语句 
-                    //cmd.Connection = conn();//调用打开数据库连接方法 
-                    cmd.ExecuteNonQuery();//执行 
-                    return true;
-                }
-                catch
-                {
-                    return false;
-                }
+                Main main = new Main();
+                main.ShowDialog();
             }
+            else
+            {
+                ;
+            }
+            Close();
         }
-       // 单击“添加信息”按钮，将够造一条SQL语句（实现添加功能）。然后将这条语句传给insertDB方法，实现数据的添加。
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Register register = new Register(conn);
+            register.ShowDialog();
+        }
+        // 单击“添加信息”按钮，将够造一条SQL语句（实现添加功能）。然后将这条语句传给insertDB方法，实现数据的添加。
 
     }
 }
