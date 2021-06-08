@@ -95,18 +95,19 @@ namespace WindowsFormsApp1
         {
             dataGridView1.ReadOnly = false;
             button1.Visible = true;
-
+            button2.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             dataGridView1.ReadOnly = true;
             button1.Visible = false;
+            button2.Visible = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Refresh_bill();
         }
 
         private void 删除记录ToolStripMenuItem_Click(object sender, EventArgs e)

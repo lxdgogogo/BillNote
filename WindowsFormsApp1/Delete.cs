@@ -16,5 +16,29 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string to_delete = label1.Text;
+            bool is_valid = true;
+            for(int i = 0; i < to_delete.Length; ++i)
+            {
+                if(to_delete[i]<'0' || to_delete[i] > '9')
+                {
+                    is_valid = false;
+                    break;
+                }
+            }
+            /*
+             * 还需补写是否查询到这一条 
+             * */
+            if (is_valid)
+            {
+                //TODO 将这个记录删除
+
+                this.Close();
+            }
+
+        }
     }
 }
